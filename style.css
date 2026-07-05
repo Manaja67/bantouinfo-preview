@@ -106,13 +106,14 @@ a{ color:inherit; text-decoration:none; }
    Masthead
    =========================================================== */
 .masthead{
-  display:flex; align-items:flex-start; justify-content:space-between;
-  flex-wrap:wrap; gap:1.5rem; padding:1.1rem 1.5rem;
+  display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:nowrap; gap:1rem; padding:1.1rem 1.5rem;
   background:var(--paper-raised);
   border-bottom:1px solid var(--hairline);
+  overflow-x:auto;
 }
-.masthead__logo{ flex:none; max-width:100%; }
-.masthead__logo img{ width:800px; max-width:100%; height:auto; display:block; }
+.masthead__logo{ flex:none; }
+.masthead__logo img{ height:120px; width:auto; max-width:100%; display:block; }
 
 /* ---------- GMCC ad banner (animated, "flash-banner" style loop) ---------- */
 .ad-gmcc{
