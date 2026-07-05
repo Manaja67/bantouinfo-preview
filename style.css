@@ -464,6 +464,115 @@ a{ color:inherit; text-decoration:none; }
   .mot-dg{ flex-direction:column; }
   .mot-dg__divider{ width:auto; height:1px; align-self:stretch; min-height:0; }
   .mot-dg__ad{ flex-basis:auto; width:100%; }
+  .ad-evolutis{ flex-basis:auto; width:100%; }
+}
+
+/* ---------- Evolutis Gabon ad banner (animated, "flash-banner" style loop) ---------- */
+.ad-evolutis{
+  --evo-green:#39B54A;
+  --evo-blue:#2B2E9E;
+
+  position:relative; flex:0 0 260px;
+  display:flex; flex-direction:column; align-items:center;
+  background:linear-gradient(180deg,#FFFFFF 0%, #FBF9F4 100%);
+  border:1px solid rgba(28,30,34,.14);
+  border-radius:6px; overflow:hidden;
+  box-shadow:0 8px 24px -12px rgba(20,18,15,.35);
+  padding:0 1.1rem 1.1rem;
+}
+
+.ad-evolutis__pub{
+  position:absolute; top:6px; right:9px; z-index:2;
+  font-family:var(--mono); font-size:.55rem; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--slate); opacity:.6;
+}
+
+.ad-evolutis__shine{
+  position:absolute; top:0; left:0; right:0; height:4px;
+  background:linear-gradient(90deg, var(--evo-green) 0%, var(--evo-blue) 50%, var(--evo-green) 100%);
+  background-size:200% 100%;
+  animation:evoShine 3s linear infinite;
+}
+@keyframes evoShine{ to{ background-position:-200% 0; } }
+
+.ad-evolutis__logo{
+  width:100%; max-width:190px; height:auto; margin:1.3rem 0 .75rem;
+  opacity:0; transform:scale(.7);
+  animation:evoLogoIn 9s ease infinite; animation-delay:.2s;
+}
+@keyframes evoLogoIn{
+  0%{ opacity:0; transform:scale(.7); }
+  6%{ opacity:1; transform:scale(1.06); }
+  9%,90%{ opacity:1; transform:scale(1); }
+  97%,100%{ opacity:0; transform:scale(.92); }
+}
+
+.ad-evolutis__tagline{
+  margin:0 0 1rem; text-align:center;
+  font-family:var(--display); font-weight:700; font-style:italic; font-size:.98rem;
+  color:var(--evo-blue);
+  opacity:0; transform:translateY(6px);
+  animation:evoFadeUp 9s ease infinite; animation-delay:1s;
+}
+@keyframes evoFadeUp{
+  0%,9%{ opacity:0; transform:translateY(6px); }
+  15%,90%{ opacity:1; transform:translateY(0); }
+  97%,100%{ opacity:0; transform:translateY(6px); }
+}
+
+.ad-evolutis__services{
+  list-style:none; margin:0 0 1.1rem; padding:0; width:100%;
+  display:flex; flex-direction:column; gap:.4rem;
+}
+.ad-evolutis__services li{
+  position:relative; padding-left:16px;
+  font-family:var(--mono); font-size:.72rem; color:var(--slate);
+  opacity:0; transform:translateX(-8px);
+  animation:evoReveal 9s ease infinite;
+  animation-delay:calc(1.6s + var(--i) * .25s);
+}
+.ad-evolutis__services li::before{
+  content:""; position:absolute; left:0; top:.45em;
+  width:6px; height:6px; background:var(--evo-green);
+  clip-path:polygon(0 0, 100% 50%, 0 100%);
+}
+@keyframes evoReveal{
+  0%,6%{ opacity:0; transform:translateX(-8px); }
+  12%,90%{ opacity:1; transform:translateX(0); }
+  97%,100%{ opacity:0; transform:translateX(-8px); }
+}
+
+.ad-evolutis__contact{
+  width:100%; padding-top:1rem; border-top:1px solid var(--hairline);
+  display:flex; flex-direction:column; gap:.7rem;
+  opacity:0; transform:translateY(8px);
+  animation:evoFadeUp 9s ease infinite; animation-delay:3.2s;
+}
+.ad-evolutis__contact p{ margin:0; font-size:.78rem; line-height:1.4; color:var(--ink); }
+.ad-evolutis__contact a{ color:var(--evo-blue); font-weight:600; }
+.ad-evolutis__contact a:hover{ color:var(--evo-green); }
+.ad-evolutis__label{
+  display:block; font-family:var(--mono); font-size:.6rem; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--slate); margin-bottom:.15rem;
+}
+
+.ad-evolutis__stripe{
+  position:absolute; left:0; right:0; bottom:0; height:4px; width:0%;
+  background:repeating-linear-gradient(-45deg, var(--evo-blue) 0 8px, var(--evo-green) 8px 16px);
+  animation:evoStripe 9s ease infinite;
+}
+@keyframes evoStripe{
+  0%,6%{ width:0%; }
+  45%,90%{ width:100%; }
+  97%,100%{ width:0%; }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .ad-evolutis__shine,.ad-evolutis__logo,.ad-evolutis__tagline,.ad-evolutis__services li,.ad-evolutis__contact,.ad-evolutis__stripe{
+    animation:none !important;
+  }
+  .ad-evolutis__logo,.ad-evolutis__tagline,.ad-evolutis__services li,.ad-evolutis__contact{ opacity:1; transform:none; }
+  .ad-evolutis__stripe{ width:100%; }
 }
 
 .mot-dg__frame{
