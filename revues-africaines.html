@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Basketball : la BAL confirme son ancrage populaire — BANTOUINFO</title>
+<title>Revues africaines — BANTOUINFO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -106,9 +106,9 @@
       <li><a href="economie.html" style="--accent:var(--c-economie)">Economie</a></li>
       <li><a href="culture.html" style="--accent:var(--c-culture)">Culture</a></li>
       <li><a href="societe.html" style="--accent:var(--c-societe)">Société</a></li>
-      <li><a href="sport.html" class="is-active" style="--accent:var(--c-sport)">Sport</a></li>
+      <li><a href="sport.html" style="--accent:var(--c-sport)">Sport</a></li>
       <li><a href="international.html" style="--accent:var(--c-international)">International</a></li>
-      <li><a href="revues-africaines.html">Revues africaines</a></li>
+      <li><a href="revues-africaines.html" class="is-active">Revues africaines</a></li>
       <li><a href="newsletter.html">Newsletter</a></li>
       <li>
         <details class="nav__dropdown">
@@ -211,48 +211,72 @@
   </div>
 </div>
 <main id="contenu">
-  <article class="article-full">
-    <div class="article-full__head">
-      <a href="sport.html" class="story__kicker" style="--accent:var(--c-sport)">
-        <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
-        Sport
-      </a>
-      <h1>Basketball : la BAL confirme son ancrage populaire</h1>
-      <div class="story__meta">Dakar · il y a 1 j</div>
+  <section class="simple-page">
+    <div class="rubrique__head">
+      <span class="rubrique__eyebrow">La presse du continent</span>
+      <h1>Revues africaines</h1>
+      <span class="rubrique__rule" style="background:var(--gold)" aria-hidden="true"></span>
     </div>
-    <div class="article-full__media" style="--from:#14120F; --to:var(--c-sport)">
-      <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
-      <span class="story__media-tag">Visuel à intégrer</span>
-    </div>
-    <div class="article-full__body">
-      <p class="article-full__lead">La ligue continentale attire un public toujours plus nombreux à chaque saison.</p>
-      <p>La ligue continue d'attirer sponsors et diffuseurs, séduits par une audience en progression constante.</p>
-      <p>Plusieurs joueurs issus de la compétition ont depuis rejoint des championnats internationaux de premier plan.</p>
-    </div>
-  </article>
+    <p class="simple-page__intro">Un accès rapide aux journaux de référence à travers le continent, classés par région et par pays. Les liens seront activés au fur et à mesure de leur intégration.</p>
 
-  <section class="comments" aria-labelledby="comments-title">
-    <h2 id="comments-title">Laisser un commentaire</h2>
-    <p class="comments__note">Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont indiqués avec <span aria-hidden="true">*</span></p>
-    <form class="form-grid" action="#" method="post">
-      <div class="field field--full">
-        <label for="comment">Commentaire *</label>
-        <textarea id="comment" name="comment" rows="6" required></textarea>
+    <div class="revues__region">
+      <h2>Afrique de l'Ouest</h2>
+      <div class="revues__grid">
+        <a href="#" class="revues__card"><span class="revues__country">Côte d'Ivoire</span><span class="revues__paper">Fraternité Matin</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Sénégal</span><span class="revues__paper">Le Soleil</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Nigeria</span><span class="revues__paper">The Guardian Nigeria</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Ghana</span><span class="revues__paper">Daily Graphic</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Mali</span><span class="revues__paper">L'Essor</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Bénin</span><span class="revues__paper">La Nation</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Togo</span><span class="revues__paper">Togo Presse</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Burkina Faso</span><span class="revues__paper">Sidwaya</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Guinée</span><span class="revues__paper">Horoya</span></a>
       </div>
-      <div class="field">
-        <label for="author">Nom *</label>
-        <input id="author" name="author" type="text" required>
+    </div>
+
+    <div class="revues__region">
+      <h2>Afrique du Nord</h2>
+      <div class="revues__grid">
+        <a href="#" class="revues__card"><span class="revues__country">Maroc</span><span class="revues__paper">Le Matin</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Algérie</span><span class="revues__paper">El Watan</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Tunisie</span><span class="revues__paper">La Presse de Tunisie</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Égypte</span><span class="revues__paper">Al-Ahram</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Libye</span><span class="revues__paper">Libya Herald</span></a>
       </div>
-      <div class="field">
-        <label for="email">E-mail *</label>
-        <input id="email" name="email" type="email" required>
+    </div>
+
+    <div class="revues__region">
+      <h2>Afrique centrale</h2>
+      <div class="revues__grid">
+        <a href="#" class="revues__card"><span class="revues__country">Gabon</span><span class="revues__paper">Gabon Review</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Cameroun</span><span class="revues__paper">Cameroon Tribune</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Congo-Brazzaville</span><span class="revues__paper">Les Dépêches de Brazzaville</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">RD Congo</span><span class="revues__paper">Le Potentiel</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Tchad</span><span class="revues__paper">Le Progrès</span></a>
       </div>
-      <div class="field field--full">
-        <label for="url">Site web</label>
-        <input id="url" name="url" type="url">
+    </div>
+
+    <div class="revues__region">
+      <h2>Afrique de l'Est</h2>
+      <div class="revues__grid">
+        <a href="#" class="revues__card"><span class="revues__country">Kenya</span><span class="revues__paper">Daily Nation</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Éthiopie</span><span class="revues__paper">The Ethiopian Herald</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Tanzanie</span><span class="revues__paper">The Citizen</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Rwanda</span><span class="revues__paper">The New Times</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Ouganda</span><span class="revues__paper">Daily Monitor</span></a>
       </div>
-      <button type="submit" class="btn-submit">Publier le commentaire</button>
-    </form>
+    </div>
+
+    <div class="revues__region">
+      <h2>Afrique australe</h2>
+      <div class="revues__grid">
+        <a href="#" class="revues__card"><span class="revues__country">Afrique du Sud</span><span class="revues__paper">News24</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Zambie</span><span class="revues__paper">Times of Zambia</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Angola</span><span class="revues__paper">Jornal de Angola</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Zimbabwe</span><span class="revues__paper">The Herald</span></a>
+        <a href="#" class="revues__card"><span class="revues__country">Mozambique</span><span class="revues__paper">Notícias</span></a>
+      </div>
+    </div>
   </section>
 </main>
 <footer class="site-footer">

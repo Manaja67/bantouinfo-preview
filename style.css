@@ -330,6 +330,80 @@ a{ color:inherit; text-decoration:none; }
 .nav__submenu a:hover,
 .nav__submenu a:focus-visible{ opacity:1; background:rgba(255,255,255,.06); }
 
+/* ===========================================================
+   Markets ticker (African stock exchanges)
+   =========================================================== */
+.markets{
+  background:var(--paper-raised);
+  border-bottom:1px solid var(--hairline);
+  overflow:hidden;
+}
+.markets__track{ overflow:hidden; }
+.markets__content{
+  display:flex; gap:0; white-space:nowrap;
+  animation:marketsScroll 40s linear infinite;
+  width:max-content;
+}
+@keyframes marketsScroll{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce){
+  .markets__content{ animation:none; }
+}
+.markets__item{
+  display:flex; align-items:center; gap:.55rem;
+  padding:.55rem 1.1rem; border-right:1px solid var(--hairline);
+}
+.markets__logo{
+  flex:none; width:30px; height:30px; border-radius:50%;
+  background:var(--ink); color:var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--mono); font-size:.55rem; font-weight:600; letter-spacing:.01em;
+}
+.markets__name{ display:flex; flex-direction:column; line-height:1.2; }
+.markets__name b{
+  font-family:var(--body); font-size:.78rem; font-weight:600; color:var(--ink);
+}
+.markets__name span{
+  font-family:var(--mono); font-size:.62rem; color:var(--slate); text-transform:uppercase;
+}
+.markets__value{
+  font-family:var(--mono); font-size:.8rem; font-weight:600; color:var(--ink);
+  display:flex; flex-direction:column; align-items:flex-end; line-height:1.2;
+}
+.markets__chg{ font-size:.68rem; font-style:normal; }
+.markets__chg--up{ color:var(--green); }
+.markets__chg--down{ color:var(--red); }
+
+/* ===========================================================
+   Revues africaines
+   =========================================================== */
+.revues__region{ margin-bottom:2.5rem; }
+.revues__region h2{
+  font-family:var(--display); font-weight:800; font-size:1.25rem;
+  color:var(--ink); margin:0 0 1rem;
+  padding-bottom:.5rem; border-bottom:2px solid var(--gold);
+  display:inline-block;
+}
+.revues__grid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:1rem;
+}
+.revues__card{
+  display:flex; flex-direction:column; gap:.2rem;
+  border:1px solid var(--hairline); border-radius:6px;
+  padding:.9rem 1.05rem; background:var(--paper-raised);
+  transition:border-color .15s ease, box-shadow .15s ease;
+}
+.revues__card:hover{ border-color:var(--gold); box-shadow:0 8px 20px -12px rgba(20,18,15,.3); }
+.revues__country{
+  font-family:var(--mono); font-size:.66rem; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--slate);
+}
+.revues__paper{
+  font-family:var(--display); font-weight:700; font-size:1rem; color:var(--ink);
+}
+
 .nav__annonces{
   display:none;
   font-family:var(--mono); font-size:.72rem; letter-spacing:.05em; text-transform:uppercase;
