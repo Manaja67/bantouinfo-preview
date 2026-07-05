@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Actualités — BANTOUINFO</title>
+<title>Relations Afrique-Asie : de nouveaux accords de coopération technique — BANTOUINFO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -101,13 +101,13 @@
     </button>
     <ul class="nav__list" id="nav-list">
       <li><a href="index.html">Accueil</a></li>
-      <li><a href="actualites.html" class="is-active">Actualités</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
       <li><a href="politique.html" style="--accent:var(--c-politique)">Politique</a></li>
       <li><a href="economie.html" style="--accent:var(--c-economie)">Economie</a></li>
       <li><a href="culture.html" style="--accent:var(--c-culture)">Culture</a></li>
       <li><a href="societe.html" style="--accent:var(--c-societe)">Société</a></li>
       <li><a href="sport.html" style="--accent:var(--c-sport)">Sport</a></li>
-      <li><a href="international.html" style="--accent:var(--c-international)">International</a></li>
+      <li><a href="international.html" class="is-active" style="--accent:var(--c-international)">International</a></li>
       <li><a href="newsletter.html">Newsletter</a></li>
       <li>
         <details class="nav__dropdown">
@@ -124,109 +124,48 @@
   </nav>
 </header>
 <main id="contenu">
-  <section class="rubrique" aria-labelledby="rubrique-title">
-    <div class="rubrique__head">
-      <span class="rubrique__eyebrow">Toute l'actualité</span>
-      <h1 id="rubrique-title">Actualités</h1>
-      <span class="rubrique__rule" style="background:var(--gold)" aria-hidden="true"></span>
+  <article class="article-full">
+    <div class="article-full__head">
+      <a href="international.html" class="story__kicker" style="--accent:var(--c-international)">
+        <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
+        International
+      </a>
+      <h1>Relations Afrique-Asie : de nouveaux accords de coopération technique</h1>
+      <div class="story__meta">Libreville · il y a 1 j</div>
     </div>
-    <div class="rubrique__grid">
-      <article class="story story--row">
-        <a href="port-owendo.html" class="story__media" style="--from:#14120F; --to:var(--c-politique)">
-          <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
-          <span class="story__media-tag">Visuel à intégrer</span>
-        </a>
-        <div class="story__body">
-          <a href="politique.html" class="story__kicker" style="--accent:var(--c-politique)">
-            <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
-            Politique
-          </a>
-          <h3><a href="port-owendo.html">Port d'Owendo : au cœur des transformations qui redessinent le commerce régional</a></h3>
-          <p class="story__dek">Nouvelles grues, extension des quais, digitalisation des procédures douanières : plongée dans la modernisation du principal terminal à conteneurs du Gabon.</p>
-          <div class="story__meta">Libreville · il y a 2 h</div>
-        </div>
-      </article>
-
-      <article class="story story--row">
-        <a href="zlecaf-50-pays.html" class="story__media" style="--from:#14120F; --to:var(--c-economie)">
-          <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
-          <span class="story__media-tag">Visuel à intégrer</span>
-        </a>
-        <div class="story__body">
-          <a href="economie.html" class="story__kicker" style="--accent:var(--c-economie)">
-            <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
-            Économie
-          </a>
-          <h3><a href="zlecaf-50-pays.html">ZLECAf : le cap des 50 pays signataires franchi</a></h3>
-          <p class="story__dek">La zone de libre-échange continentale africaine franchit une nouvelle étape symbolique dans son déploiement.</p>
-          <div class="story__meta">Addis-Abeba · il y a 4 h</div>
-        </div>
-      </article>
-
-      <article class="story story--row">
-        <a href="le-pagne-identite.html" class="story__media" style="--from:#14120F; --to:var(--c-culture)">
-          <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
-          <span class="story__media-tag">Visuel à intégrer</span>
-        </a>
-        <div class="story__body">
-          <a href="culture.html" class="story__kicker" style="--accent:var(--c-culture)">
-            <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
-            Culture
-          </a>
-          <h3><a href="le-pagne-identite.html">Le pagne, fil conducteur d'une identité panafricaine retrouvée</a></h3>
-          <p class="story__dek">Entre tradition textile et mode contemporaine, le pagne s'impose comme symbole d'unité culturelle.</p>
-          <div class="story__meta">Dakar · il y a 6 h</div>
-        </div>
-      </article>
-
-      <article class="story story--row">
-        <a href="diaspora-solidarite.html" class="story__media" style="--from:#14120F; --to:var(--c-societe)">
-          <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
-          <span class="story__media-tag">Visuel à intégrer</span>
-        </a>
-        <div class="story__body">
-          <a href="societe.html" class="story__kicker" style="--accent:var(--c-societe)">
-            <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
-            Société
-          </a>
-          <h3><a href="diaspora-solidarite.html">Diaspora : ces réseaux qui réinventent la solidarité entre générations</a></h3>
-          <p class="story__dek">Associations et plateformes numériques tissent de nouveaux liens entre continent et diaspora.</p>
-          <div class="story__meta">Paris · il y a 8 h</div>
-        </div>
-      </article>
-
-      <article class="story story--row">
-        <a href="can-2027-stades.html" class="story__media" style="--from:#14120F; --to:var(--c-sport)">
-          <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
-          <span class="story__media-tag">Visuel à intégrer</span>
-        </a>
-        <div class="story__body">
-          <a href="sport.html" class="story__kicker" style="--accent:var(--c-sport)">
-            <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
-            Sport
-          </a>
-          <h3><a href="can-2027-stades.html">CAN 2027 : les stades qui redessinent la carte du football africain</a></h3>
-          <p class="story__dek">Tour d'horizon des infrastructures sportives en chantier à l'approche de la compétition.</p>
-          <div class="story__meta">Yaoundé · il y a 9 h</div>
-        </div>
-      </article>
-
-      <article class="story story--row">
-        <a href="afrique-caraibes.html" class="story__media" style="--from:#14120F; --to:var(--c-international)">
-          <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
-          <span class="story__media-tag">Visuel à intégrer</span>
-        </a>
-        <div class="story__body">
-          <a href="international.html" class="story__kicker" style="--accent:var(--c-international)">
-            <svg class="icon icon--bullet" aria-hidden="true"><use href="#sun-cog"/></svg>
-            International
-          </a>
-          <h3><a href="afrique-caraibes.html">Afrique–Caraïbes : un pont mémoriel qui se construit</a></h3>
-          <p class="story__dek">Des initiatives culturelles et diplomatiques rapprochent les deux rives de l'Atlantique.</p>
-          <div class="story__meta">Fort-de-France · il y a 7 h</div>
-        </div>
-      </article>
+    <div class="article-full__media" style="--from:#14120F; --to:var(--c-international)">
+      <span class="story__watermark" aria-hidden="true"><svg class="icon"><use href="#sun-cog"/></svg></span>
+      <span class="story__media-tag">Visuel à intégrer</span>
     </div>
+    <div class="article-full__body">
+      <p class="article-full__lead">Plusieurs partenariats ont été signés autour des infrastructures et de la formation.</p>
+      <p>Les accords couvrent notamment la formation professionnelle, les infrastructures de transport et les transferts de technologie.</p>
+      <p>Plusieurs partenaires asiatiques annoncent vouloir approfondir ces coopérations dans les prochaines années.</p>
+    </div>
+  </article>
+
+  <section class="comments" aria-labelledby="comments-title">
+    <h2 id="comments-title">Laisser un commentaire</h2>
+    <p class="comments__note">Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont indiqués avec <span aria-hidden="true">*</span></p>
+    <form class="form-grid" action="#" method="post">
+      <div class="field field--full">
+        <label for="comment">Commentaire *</label>
+        <textarea id="comment" name="comment" rows="6" required></textarea>
+      </div>
+      <div class="field">
+        <label for="author">Nom *</label>
+        <input id="author" name="author" type="text" required>
+      </div>
+      <div class="field">
+        <label for="email">E-mail *</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="field field--full">
+        <label for="url">Site web</label>
+        <input id="url" name="url" type="url">
+      </div>
+      <button type="submit" class="btn-submit">Publier le commentaire</button>
+    </form>
   </section>
 </main>
 <footer class="site-footer">
