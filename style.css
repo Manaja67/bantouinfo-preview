@@ -335,8 +335,34 @@ a{ color:inherit; text-decoration:none; }
 .mot-dg{
   max-width:1200px; margin:0 auto;
   padding:3rem 1.5rem;
-  display:flex; gap:2.5rem; align-items:flex-start; flex-wrap:wrap;
+  display:flex; gap:2.5rem; align-items:stretch; flex-wrap:wrap;
   border-bottom:1px solid var(--hairline);
+}
+
+.mot-dg__main{
+  flex:1 1 560px; min-width:0;
+  display:flex; gap:2.5rem; flex-wrap:wrap; align-items:flex-start;
+}
+
+.mot-dg__divider{
+  flex:none; width:1px; align-self:stretch;
+  background:var(--hairline); min-height:2rem;
+}
+
+.mot-dg__ad{
+  flex:0 0 260px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.3rem;
+  border:1.5px dashed var(--hairline); border-radius:6px;
+  min-height:250px;
+  color:var(--slate);
+  font-family:var(--mono); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase;
+}
+.mot-dg__ad-dim{ opacity:.55; font-size:.68rem; }
+
+@media (max-width:899px){
+  .mot-dg{ flex-direction:column; }
+  .mot-dg__divider{ width:auto; height:1px; align-self:stretch; min-height:0; }
+  .mot-dg__ad{ flex-basis:auto; width:100%; }
 }
 
 .mot-dg__frame{
