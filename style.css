@@ -111,11 +111,7 @@ a{ color:inherit; text-decoration:none; }
   background:var(--paper-raised);
   border-bottom:1px solid var(--hairline);
 }
-.masthead__logo img{ height:64px; width:auto; }
-
-@media (min-width:640px){
-  .masthead__logo img{ height:88px; }
-}
+.masthead__logo img{ width:120px; height:auto; display:block; }
 
 /* ---------- GMCC ad banner (animated, "flash-banner" style loop) ---------- */
 .ad-gmcc{
@@ -349,7 +345,7 @@ a{ color:inherit; text-decoration:none; }
   box-shadow:0 10px 24px -14px rgba(20,18,15,.4);
   margin:0 auto;
 }
-.mot-dg__frame img{ display:block; width:100%; aspect-ratio:4/5; object-fit:cover; }
+.mot-dg__frame img{ display:block; width:100%; aspect-ratio:708/1080; object-fit:cover; object-position:center top; }
 
 .mot-dg__body{ flex:1 1 420px; min-width:0; }
 
