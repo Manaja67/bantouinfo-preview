@@ -671,6 +671,7 @@ a{ color:inherit; text-decoration:none; }
   position:relative; display:block; aspect-ratio:16/10; border-radius:6px; overflow:hidden;
   background:linear-gradient(135deg,var(--from),var(--to));
 }
+.story__media img{ width:100%; height:100%; object-fit:cover; display:block; }
 .story--lead .story__media{ aspect-ratio:16/11; }
 
 .story__watermark{
@@ -754,6 +755,7 @@ a{ color:inherit; text-decoration:none; }
   background:linear-gradient(135deg,var(--from),var(--to));
   margin-bottom:2rem;
 }
+.article-full__media img{ width:100%; height:100%; object-fit:cover; display:block; }
 .article-full__body{ font-size:1.05rem; line-height:1.75; color:var(--ink); }
 .article-full__body p{ margin:0 0 1.1rem; }
 .article-full__lead{
